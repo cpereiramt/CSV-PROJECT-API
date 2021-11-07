@@ -8,6 +8,7 @@ const mongoose = require("mongoose");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/userRouter");
 var contactRouter = require("./routes/contactRouter");
+var authRouter = require("./routes/authenticateRouter");
 var app = express();
 
 // view engine setup
@@ -23,6 +24,8 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/user", usersRouter);
 app.use("/contact", contactRouter);
+app.use("/auth", authRouter);
+
 // Mongoose connection
 mongoose.connect("mongodb://localhost:27017/user_information", {
   useNewUrlParser: true,

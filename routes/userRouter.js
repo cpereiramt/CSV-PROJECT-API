@@ -1,6 +1,7 @@
 var express = require("express");
 var userRouter = express.Router();
 var userModel = require("../models/UserModel");
+
 userRouter.post("/", async (req, res) => {
   var user = new userModel(req.body);
   try {
