@@ -33,9 +33,9 @@ To configure this project,follow the step by step below:
 * Encrypt user password
 * Create enumeration of status of imported files.
 * Make the Upload of files to AWS s3
-* and so on
 * Implement unit tests
 * deploy project on AWS
+* and so on
 -----
 
 
